@@ -1,0 +1,206 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>博客列表</title>
+
+    <link href="/static/vendor/editor/css/editormd.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/vendor/landing-page/landing-page.min.css">
+
+    <link rel="stylesheet" href="/static/css/public.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <!-- Logo 位置 -->
+        <img class="mr-3" alt="Logo"
+             src="/static/img/logo.png" style="max-width: 30px">
+        <a class="navbar-brand" href="#">Stary</a>
+        <!-- 响应式导航下拉按钮 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- s 左侧导航 -->
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"><!-- 占位 --></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">博客</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+            <!-- e 左侧导航 -->
+            <!-- s 右侧导航 -->
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="linkA"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="linkB"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="linkC"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- 落地页 -->
+<header class="masthead text-white text-center"
+        style="background-image: url('/static/images/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto text-left pl-5">
+                <h1>Stary Blog</h1>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container container-fluid mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-8">
+            <ul class="list-unstyled" id="blogPoList">
+            </ul>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card mb-3">
+                <div class="card-header">
+                    搜索文章
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="输入你想查找的题目..."
+                                   aria-label="输入你想查找的题目...">
+                            <span class="input-group-btn">
+                                <a class="btn btn-primary">搜索</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left my-auto">
+                <ul class="list-inline mb-2 text-white">
+                    <li class="list-inline-item">
+                        <a href="/" class="text-white">首页</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="https://www.jianshu.com/u/1cf944534e27" class="text-white">简书</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Yuanxingyu" target="_blank" class="text-white">Github空间</a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; Stary All Rights Reserved. </p>
+                <!--<p class="text-muted small mb-4 mb-lg-0">京ICP备18016530号-1</p>-->
+            </div>
+            <div class="col-lg-6 text-center text-lg-right my-auto">
+                <ul class="list-inline mb-0">
+                    <!-- github -->
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/Yuanxingyu" target="_blank" class="text-white">
+                            <i class="fa fa-github fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <!-- qq -->
+                    <li class="list-inline-item mr-3">
+                        <a href="tencent://message/?uin=3303521941&Site=在线QQ&amp;Menu=yes" class="text-white">
+                            <i class="fa fa-qq fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <!-- wechat -->
+                    <img id="id_img_wechat_qrcode" src="/static/img/wechat_qr.jpeg" alt="Wechat" class="img_shadow"
+                         style=" display:none;width: 200px;position: absolute;bottom: 50px;right: 0;">
+                    <li class="list-inline-item">
+                        <a class="text-white" id="id_a_wechat">
+                            <i class="fa fa-wechat fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap-Core JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap-Bundle JS-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<!-- Fotter -->
+<script src="/static/js/f_footer.js"></script>
+<script>
+    $(document).ready(function () {
+        $.post('/api/isLogin', function (result) {
+            if (result.code === 2) {
+                $('#linkA').text(result.data);
+                if (result.data === 'smartstary') {
+                    $('#linkB').text('博客管理').attr('href', '/static/html/blogEdit.html');
+                <!--} else {-->
+                    $('#linkC').text('上传').attr('href', '/static/html/fileUpload.html');
+                }
+                <!--$('#linkC').text('退出').attr('href', '/api/logout');-->
+            }
+            else {
+                $('#linkB').text('');
+                $('#linkC').text('');
+            }
+        }).fail(function () {
+            alert("网络异常，请重试");
+        });
+
+        $.post('/api/blogList', function (result) {
+            if (result.code===0) {
+                var blog='';
+                $.each(result.data, function (i, date) {
+                    blog = blog +
+                        '<div class="card mt-3">\n' +
+                        '    <div class="card-body">\n' +
+                        '        <a href="/static/html/blogDetail.html?id=' + date.id + '" class="text-dark"><h4\n' +
+                        '                class="card-title font-weight-bold">' + date.title + '</h4>\n' +
+                        '        </a>\n' +
+                        '        <p class="text-right text-secondary">' + date.createTime + '</p>\n' +
+                        '    </div>\n' +
+                        '</div>\n';
+
+                });
+                $('#blogPoList').html(blog);
+            }
+        }).fail(function () {
+            alert("网络异常，请重试");
+        });
+    });
+</script>
+</body>
+</html>
