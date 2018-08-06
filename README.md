@@ -14,3 +14,17 @@
 
 >后期对此项目整理完毕会发布到我的博客上，届时将贴出我的博客
 
+####下面是项目运行效果
+
+#####博客主页
+![](https://github.com/Yuanxingyu/blog/blob/master/screenshots/index.png?raw=true)
+
+
+
+#####博客管理页面
+![](https://github.com/Yuanxingyu/blog/blob/master/screenshots/manage.png?raw=true)
+
+
+
+#####博客编写页面
+![](https://github.com/Yuanxingyu/blog/blob/master/screenshots/edit.png?raw=true)
